@@ -36,10 +36,10 @@ extension URLSession {
             
             do {
                 let result = try JSONDecoder().decode(T.self, from: data)
-                // print(result)
+                 print("result: \(result)")
                 completion(.success(result))
             } catch {
-                print(error)
+                print("error: \(error)")
                 completion(.failure(.invalidData))
             }
         }

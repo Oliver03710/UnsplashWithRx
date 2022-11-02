@@ -11,13 +11,13 @@ final class FetchPhotoByIDViewController: BaseViewController {
 
     // MARK: - Properties
     
-    private let photoListView = FetchPhotoByIDView()
+    private let photoIdView = FetchPhotoByIDView()
     
     
     // MARK: - Init
     
     override func loadView() {
-        view = photoListView
+        view = photoIdView
     }
     
     override func viewDidLoad() {
