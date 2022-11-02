@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+enum NetworkingCodes: String {
+    case autho = "Authorization"
+    case url = "URL 오류"
+}
