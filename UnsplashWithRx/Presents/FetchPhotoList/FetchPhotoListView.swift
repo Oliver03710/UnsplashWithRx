@@ -7,8 +7,17 @@
 
 import UIKit
 
+import RxCocoa
+import RxSwift
+
 final class FetchPhotoListView: BaseView {
 
+    // MARK: - Properties
+    
+    private let viewModel = PhotoListViewModel()
+    private let disposeBag = DisposeBag()
+    
+    
     // MARK: - Init
     
     override init(frame: CGRect) {
@@ -23,7 +32,13 @@ final class FetchPhotoListView: BaseView {
     // MARK: - Helper Functions
     
     override func configureUI() {
-        
+        viewModel.fetchPhotoList()
+        viewModel.photoList
+            .asDriver(onErrorJustReturn: [])
+            .drive { value in
+                dump(value)
+            }
+            .disposed(by: disposeBag)
     }
     
     override func setConstraints() {

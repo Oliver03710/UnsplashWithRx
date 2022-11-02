@@ -11,25 +11,27 @@
 		AD4F892A29116E0D00246D9C /* FetchPhotoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F892929116E0D00246D9C /* FetchPhotoListView.swift */; };
 		AD4F892E2911703100246D9C /* FetchPhotoByIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F892D2911703100246D9C /* FetchPhotoByIDViewController.swift */; };
 		AD4F89302911705000246D9C /* FetchPhotoByIDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F892F2911705000246D9C /* FetchPhotoByIDView.swift */; };
-		AD4F8934291170D000246D9C /* PhotoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F8933291170D000246D9C /* PhotoListViewModel.swift */; };
 		AD4F8936291170E000246D9C /* PhotoByIDViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F8935291170E000246D9C /* PhotoByIDViewModel.swift */; };
 		AD4F89382911719200246D9C /* PhotoListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F89372911719200246D9C /* PhotoListCollectionViewCell.swift */; };
 		AD4F893D2911737E00246D9C /* PhotoByIDCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F893C2911737E00246D9C /* PhotoByIDCollectionViewCell.swift */; };
 		AD4F893F291173A700246D9C /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F893E291173A700246D9C /* PhotoManager.swift */; };
+		AD4F89412911760B00246D9C /* PhotoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F89402911760B00246D9C /* PhotoData.swift */; };
+		AD4F894429117B6600246D9C /* CommonViewModel+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F894329117B6600246D9C /* CommonViewModel+Protocol.swift */; };
 		ADCA400329112A9700FDC8EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCA400229112A9700FDC8EF /* AppDelegate.swift */; };
 		ADCA400529112A9700FDC8EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCA400429112A9700FDC8EF /* SceneDelegate.swift */; };
-		ADCA400729112A9700FDC8EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCA400629112A9700FDC8EF /* ViewController.swift */; };
+		ADCA400729112A9700FDC8EF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCA400629112A9700FDC8EF /* BaseViewController.swift */; };
 		ADCA400A29112A9700FDC8EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADCA400829112A9700FDC8EF /* Main.storyboard */; };
 		ADCA400C29112A9800FDC8EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADCA400B29112A9800FDC8EF /* Assets.xcassets */; };
 		ADCA400F29112A9800FDC8EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADCA400D29112A9800FDC8EF /* LaunchScreen.storyboard */; };
-		ADCA401829112AF800FDC8EF /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = ADCA401729112AF800FDC8EF /* RxCocoa */; };
-		ADCA401A29112AF800FDC8EF /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ADCA401929112AF800FDC8EF /* RxSwift */; };
 		ADCA401E2911313C00FDC8EF /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCA401D2911313C00FDC8EF /* BaseView.swift */; };
 		ADCA4020291131C400FDC8EF /* FetchPhotoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCA401F291131C400FDC8EF /* FetchPhotoListViewController.swift */; };
 		ADCA40262911332500FDC8EF /* URLSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCA40252911332500FDC8EF /* URLSession+Extension.swift */; };
 		ADCA40282911334600FDC8EF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = ADCA40272911334600FDC8EF /* .gitignore */; };
 		ADCA402B2911338F00FDC8EF /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCA402A2911338F00FDC8EF /* APIKeys.swift */; };
 		ADCA402D291133C100FDC8EF /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCA402C291133C100FDC8EF /* Endpoints.swift */; };
+		ADF21D072911F32B00383C5F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = ADF21D062911F32B00383C5F /* RxCocoa */; };
+		ADF21D092911F32B00383C5F /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ADF21D082911F32B00383C5F /* RxSwift */; };
+		ADF21D0D2911F4A600383C5F /* PhotoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF21D0C2911F4A600383C5F /* PhotoListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,15 +39,16 @@
 		AD4F892929116E0D00246D9C /* FetchPhotoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPhotoListView.swift; sourceTree = "<group>"; };
 		AD4F892D2911703100246D9C /* FetchPhotoByIDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPhotoByIDViewController.swift; sourceTree = "<group>"; };
 		AD4F892F2911705000246D9C /* FetchPhotoByIDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPhotoByIDView.swift; sourceTree = "<group>"; };
-		AD4F8933291170D000246D9C /* PhotoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewModel.swift; sourceTree = "<group>"; };
 		AD4F8935291170E000246D9C /* PhotoByIDViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoByIDViewModel.swift; sourceTree = "<group>"; };
 		AD4F89372911719200246D9C /* PhotoListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListCollectionViewCell.swift; sourceTree = "<group>"; };
 		AD4F893C2911737E00246D9C /* PhotoByIDCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoByIDCollectionViewCell.swift; sourceTree = "<group>"; };
 		AD4F893E291173A700246D9C /* PhotoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
+		AD4F89402911760B00246D9C /* PhotoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoData.swift; sourceTree = "<group>"; };
+		AD4F894329117B6600246D9C /* CommonViewModel+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommonViewModel+Protocol.swift"; sourceTree = "<group>"; };
 		ADCA3FFF29112A9700FDC8EF /* UnsplashWithRx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnsplashWithRx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADCA400229112A9700FDC8EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADCA400429112A9700FDC8EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ADCA400629112A9700FDC8EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADCA400629112A9700FDC8EF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		ADCA400929112A9700FDC8EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADCA400B29112A9800FDC8EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADCA400E29112A9800FDC8EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +59,7 @@
 		ADCA40272911334600FDC8EF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		ADCA402A2911338F00FDC8EF /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		ADCA402C291133C100FDC8EF /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		ADF21D0C2911F4A600383C5F /* PhotoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,48 +67,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADCA401A29112AF800FDC8EF /* RxSwift in Frameworks */,
-				ADCA401829112AF800FDC8EF /* RxCocoa in Frameworks */,
+				ADF21D092911F32B00383C5F /* RxSwift in Frameworks */,
+				ADF21D072911F32B00383C5F /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AD4F892B29116FFC00246D9C /* Views */ = {
+		AD4F892C2911701000246D9C /* FetchPhotoByID */ = {
 			isa = PBXGroup;
 			children = (
-				AD4F892929116E0D00246D9C /* FetchPhotoListView.swift */,
-				AD4F892F2911705000246D9C /* FetchPhotoByIDView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		AD4F892C2911701000246D9C /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				ADCA401F291131C400FDC8EF /* FetchPhotoListViewController.swift */,
-				AD4F892D2911703100246D9C /* FetchPhotoByIDViewController.swift */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		AD4F89312911708C00246D9C /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				AD4F8933291170D000246D9C /* PhotoListViewModel.swift */,
 				AD4F8935291170E000246D9C /* PhotoByIDViewModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		AD4F8932291170B700246D9C /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				AD4F89372911719200246D9C /* PhotoListCollectionViewCell.swift */,
+				AD4F892D2911703100246D9C /* FetchPhotoByIDViewController.swift */,
+				AD4F892F2911705000246D9C /* FetchPhotoByIDView.swift */,
 				AD4F893C2911737E00246D9C /* PhotoByIDCollectionViewCell.swift */,
 			);
-			path = Cells;
+			path = FetchPhotoByID;
+			sourceTree = "<group>";
+		};
+		AD4F89312911708C00246D9C /* FetchPhotoList */ = {
+			isa = PBXGroup;
+			children = (
+				ADF21D0C2911F4A600383C5F /* PhotoListViewModel.swift */,
+				ADCA401F291131C400FDC8EF /* FetchPhotoListViewController.swift */,
+				AD4F892929116E0D00246D9C /* FetchPhotoListView.swift */,
+				AD4F89372911719200246D9C /* PhotoListCollectionViewCell.swift */,
+			);
+			path = FetchPhotoList;
+			sourceTree = "<group>";
+		};
+		AD4F894229117B5400246D9C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AD4F894329117B6600246D9C /* CommonViewModel+Protocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		ADCA3FF629112A9700FDC8EF = {
@@ -143,8 +141,8 @@
 		ADCA401B2911302E00FDC8EF /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				AD4F892729116D5500246D9C /* HardCodings.swift */,
 				ADCA401C291130AC00FDC8EF /* Base */,
+				AD4F894229117B5400246D9C /* Protocols */,
 				ADCA40232911321900FDC8EF /* Extensions */,
 				ADCA40242911323A00FDC8EF /* Data */,
 			);
@@ -154,7 +152,7 @@
 		ADCA401C291130AC00FDC8EF /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				ADCA400629112A9700FDC8EF /* ViewController.swift */,
+				ADCA400629112A9700FDC8EF /* BaseViewController.swift */,
 				ADCA401D2911313C00FDC8EF /* BaseView.swift */,
 			);
 			path = Base;
@@ -163,10 +161,8 @@
 		ADCA4021291131D100FDC8EF /* Presents */ = {
 			isa = PBXGroup;
 			children = (
-				AD4F89312911708C00246D9C /* Models */,
-				AD4F892C2911701000246D9C /* ViewControllers */,
-				AD4F892B29116FFC00246D9C /* Views */,
-				AD4F8932291170B700246D9C /* Cells */,
+				AD4F89312911708C00246D9C /* FetchPhotoList */,
+				AD4F892C2911701000246D9C /* FetchPhotoByID */,
 			);
 			path = Presents;
 			sourceTree = "<group>";
@@ -182,6 +178,7 @@
 		ADCA40242911323A00FDC8EF /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				AD4F892729116D5500246D9C /* HardCodings.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -192,6 +189,7 @@
 				ADCA402A2911338F00FDC8EF /* APIKeys.swift */,
 				ADCA402C291133C100FDC8EF /* Endpoints.swift */,
 				AD4F893E291173A700246D9C /* PhotoManager.swift */,
+				AD4F89402911760B00246D9C /* PhotoData.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -213,8 +211,8 @@
 			);
 			name = UnsplashWithRx;
 			packageProductDependencies = (
-				ADCA401729112AF800FDC8EF /* RxCocoa */,
-				ADCA401929112AF800FDC8EF /* RxSwift */,
+				ADF21D062911F32B00383C5F /* RxCocoa */,
+				ADF21D082911F32B00383C5F /* RxSwift */,
 			);
 			productName = UnsplashWithRx;
 			productReference = ADCA3FFF29112A9700FDC8EF /* UnsplashWithRx.app */;
@@ -245,7 +243,7 @@
 			);
 			mainGroup = ADCA3FF629112A9700FDC8EF;
 			packageReferences = (
-				ADCA401629112AF800FDC8EF /* XCRemoteSwiftPackageReference "RxSwift" */,
+				ADF21D052911F32B00383C5F /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = ADCA400029112A9700FDC8EF /* Products */;
 			projectDirPath = "";
@@ -275,19 +273,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD4F8934291170D000246D9C /* PhotoListViewModel.swift in Sources */,
 				AD4F892A29116E0D00246D9C /* FetchPhotoListView.swift in Sources */,
+				AD4F89412911760B00246D9C /* PhotoData.swift in Sources */,
 				AD4F893F291173A700246D9C /* PhotoManager.swift in Sources */,
 				AD4F892E2911703100246D9C /* FetchPhotoByIDViewController.swift in Sources */,
 				AD4F89302911705000246D9C /* FetchPhotoByIDView.swift in Sources */,
-				ADCA400729112A9700FDC8EF /* ViewController.swift in Sources */,
+				ADCA400729112A9700FDC8EF /* BaseViewController.swift in Sources */,
 				AD4F8936291170E000246D9C /* PhotoByIDViewModel.swift in Sources */,
+				AD4F894429117B6600246D9C /* CommonViewModel+Protocol.swift in Sources */,
 				ADCA400329112A9700FDC8EF /* AppDelegate.swift in Sources */,
 				AD4F89382911719200246D9C /* PhotoListCollectionViewCell.swift in Sources */,
 				ADCA402B2911338F00FDC8EF /* APIKeys.swift in Sources */,
 				AD4F892829116D5500246D9C /* HardCodings.swift in Sources */,
 				ADCA40262911332500FDC8EF /* URLSession+Extension.swift in Sources */,
 				ADCA4020291131C400FDC8EF /* FetchPhotoListViewController.swift in Sources */,
+				ADF21D0D2911F4A600383C5F /* PhotoListViewModel.swift in Sources */,
 				ADCA400529112A9700FDC8EF /* SceneDelegate.swift in Sources */,
 				ADCA402D291133C100FDC8EF /* Endpoints.swift in Sources */,
 				ADCA401E2911313C00FDC8EF /* BaseView.swift in Sources */,
@@ -367,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +421,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -442,7 +442,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UnsplashWithRx/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
@@ -473,7 +473,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UnsplashWithRx/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
@@ -517,7 +517,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		ADCA401629112AF800FDC8EF /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+		ADF21D052911F32B00383C5F /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
 			requirement = {
@@ -528,14 +528,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		ADCA401729112AF800FDC8EF /* RxCocoa */ = {
+		ADF21D062911F32B00383C5F /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = ADCA401629112AF800FDC8EF /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = ADF21D052911F32B00383C5F /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxCocoa;
 		};
-		ADCA401929112AF800FDC8EF /* RxSwift */ = {
+		ADF21D082911F32B00383C5F /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = ADCA401629112AF800FDC8EF /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = ADF21D052911F32B00383C5F /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
