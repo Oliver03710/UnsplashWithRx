@@ -9,6 +9,11 @@ import UIKit
 
 final class FetchPhotoByIDView: BaseView {
 
+    // MARK: - Properties
+    
+    private let viewModel = PhotoByIDViewModel()
+    
+    
     // MARK: - Init
     
     override init(frame: CGRect) {
